@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/x-icon" href="imgs/logo.png" />
+    <link rel="stylesheet" href="style/bootstrap.min.css" />
+    <link rel="stylesheet" href="font-awesome/css/all.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/style.css" />
+    <title>Yummy</title>
+  </head>
+  <body>
+    <div class="spinner d-none">
+      <div class="loader position-absolute"></div>
+    </div>
+    <div class="container overflow-auto">
+      <!-- Navbar section -->
+      <nav class="position-fixed d-flex">
+        <div
+          class="navContent text-white d-flex justify-content-between flex-column"
+        >
+          <div class="Navlist overflow-hidden">
+            <ul class="list-unstyled m-4 position-relative" id="navList">
+              <li><a href="#" id="search">Search</a></li>
+              <li><a href="#" id="categories">Categories</a></li>
+              <li><a href="#" id="area">Area</a></li>
+              <li><a href="#" id="ingredients">Ingredients</a></li>
+              <li><a href="#" id="contact">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="footer m-4">
+            <i class="fa-brands fa-facebook socialIcons"></i>
+            <i class="fa-brands fa-twitter socialIcons"></i>
+            <i class="fa-solid fa-globe socialIcons"></i>
+            <p>Copyright © 2024 All Rights <br />Reserved.</p>
+          </div>
+        </div>
+        <div
+          class="whiteSpace d-flex justify-content-between align-items-center flex-column"
+        >
+          <img src="imgs/logo.png" alt="Logo Image" class="w-75 mt-3" />
+          <i class="fa-solid fa-align-justify OpencloseNav"></i>
+          <div class="mb-3">
+            <i class="fa-solid fa-globe d-block socialIcons"></i>
+            <i class="fa-solid fa-share-nodes socialIcons"></i>
+          </div>
+        </div>
+      </nav>
+      <!-- Main index page -->
+      <div class="row mt-3 mb-5" id="categoriesView">
+        <div class="row" id="searchInside"></div>
+      </div>
+      <!-- Item showing -->
+      <div class="mealView text-white d-none" id="mealView"></div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
